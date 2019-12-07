@@ -1,2 +1,0 @@
-java clientServerResturant.Client
-pause
