@@ -22,7 +22,7 @@ import javax.swing.border.AbstractBorder;
  * <p> description of the order.
  * 
  * @author Hagay Enoch
- * @version 6.12.19
+ * @version 8.12.19
  *  
  */
 public class OrderPanel extends JPanel
@@ -216,7 +216,7 @@ public class OrderPanel extends JPanel
 	 */
 	public void sendOrder(String msg) 
 	{
-		new sendOrderWorker(this, msg).execute();
+		new SendOrderWorker(this, msg).execute();
 	}
 	
 	/**

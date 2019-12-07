@@ -14,10 +14,10 @@ import javax.swing.SwingWorker;
  * process.
  * 
  * @author Hagay Enoch
- * @version 5.12.19
+ * @version 8.12.19
  *  
  */
-public class sendOrderWorker extends SwingWorker<Void, Void>
+public class SendOrderWorker extends SwingWorker<Void, Void>
 {
 	private final int MAX_TRY = 3; 		// max attempts to get a connection
 	private final int MAX_SEC = 10; 	// max seconds to wait if socket freeze
@@ -32,9 +32,9 @@ public class sendOrderWorker extends SwingWorker<Void, Void>
 	/**
 	 * Constructor for GetMenuWorker.
 	 * @param _continer is the reference to menu panel.
-	 * @param _foodList is the reference to food-List array of the menu panel. 
+	 * @param msg the message to sent to the server.
 	 */
-	public sendOrderWorker(OrderPanel _continer, String msg)
+	public SendOrderWorker(OrderPanel _continer, String msg)
 	{
 		message = msg;
 		continer = _continer;

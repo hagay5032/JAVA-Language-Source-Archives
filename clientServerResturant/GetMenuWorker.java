@@ -15,7 +15,7 @@ import javax.swing.SwingWorker;
  * process.
  * 
  * @author Hagay Enoch
- * @version 6.12.19
+ * @version 8.12.19
  *  
  */
 public class GetMenuWorker extends SwingWorker<Void, Void>
@@ -37,7 +37,6 @@ public class GetMenuWorker extends SwingWorker<Void, Void>
 	/**
 	 * Constructor for GetMenuWorker.
 	 * @param _continer is the reference to menu panel.
-	 * @param _foodList is the food-List of the menu panel. 
 	 */
 	public GetMenuWorker(MenuGUI _continer)
 	{
